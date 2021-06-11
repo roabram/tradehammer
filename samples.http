@@ -1,8 +1,14 @@
-### Single Stock 
-GET https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=08f8ca3c51313dd913f7f765a26ebc29
+@port = {{$dotenv PORT}}
+@baseUrl = http://localhost:{{port}}
+
+### Single Crypto 
+GET {{baseUrl}}/api/crypto
 
 ### Stock List
 GET 
 
 ### News
 
+
+###API KEY ( 08f8ca3c51313dd913f7f765a26ebc29 ) - Single Crypto 
+### https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=08f8ca3c51313dd913f7f765a26ebc29

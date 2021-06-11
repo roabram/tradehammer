@@ -5,7 +5,7 @@ import express from 'express';
 import router from './server/routes';
 import path from 'path';
 
-const { PORT = 6000 } = process.env;
+const { PORT = 3333 } = process.env;
 
 const app = express();
 
