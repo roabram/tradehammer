@@ -1,11 +1,11 @@
 @port = {{$dotenv PORT}}
 @baseUrl = http://localhost:{{port}}
 
+
 ### Single Crypto 
-GET {{baseUrl}}/api/crypto
+GET /api/singleStock(AAPL)
 
 ### Stock List
-GET 
+GET {{baseUrl}}/api/singleStock?stock=AAPL&time=15min
 
 ### News
-
