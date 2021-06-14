@@ -8,11 +8,6 @@ type ErrorResult = {
   message: string;
 };
 
-export type Query = {
-  stock: string;
-  time: string;
-};
-
 async function fetchSingleStockbyTime(
   stock: string,
   time: string
