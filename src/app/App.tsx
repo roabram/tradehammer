@@ -11,7 +11,7 @@ function App(): JSX.Element {
         </Route>
         <Route exact path="/">
           <p>Nein</p>
-          <Button>Hallo</Button>
+          <Button onClick={() => alert('hi')}>Hallo</Button>
         </Route>
       </Switch>
     </BrowserRouter>
