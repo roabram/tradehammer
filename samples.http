@@ -3,3 +3,6 @@
 
 ### Single Stock 15 min 
 GET {{baseUrl}}/api/singleStock?stock=AAPL&time=15min
+
+### Single Stock 15 min 
+GET {{baseUrl}}/api/singleStock?stock=AAPL&time=30min
