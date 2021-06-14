@@ -1,11 +1,12 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import styles from './Button.module.css';
 
-type ButtonProps = {
-  children: ReactNode;
-};
-function Button({ children }: ButtonProps): JSX.Element {
-  return <button className={styles.button}>{children}</button>;
+function Button(): JSX.Element {
+  return (
+    <button className={styles.button} onClick={() => alert('Good Job')}>
+      Hol dir den Alert
+    </button>
+  );
 }
 
 export default Button;
