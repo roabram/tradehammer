@@ -54,6 +54,7 @@
     "vite": "^2.2.3"
   },
   "dependencies": {
+    "apexcharts": "^3.27.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
