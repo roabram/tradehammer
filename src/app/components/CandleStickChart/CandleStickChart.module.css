@@ -1,4 +1,4 @@
 .container {
-  background-color: var(--secondary-bg-color);
-  padding: 5px;
+  background-image: var(--secondary-bg-color);
+  width: 50em;
 }
