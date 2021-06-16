@@ -7,6 +7,11 @@ function CandleStickChart(): JSX.Element {
     <div className={styles.container}>
       <Chart
         options={{
+          chart: {
+            toolbar: {
+              show: false,
+            },
+          },
           grid: {
             show: false,
           },
