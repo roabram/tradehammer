@@ -4,6 +4,7 @@
   --primary-bg-color: #b4a8a8;
   --secondary-bg-color: linear-gradient(180deg, #000, #b4a8a8);
   --primary-font-family: 'Roboto', sans-serif;
+  --font-color: #fff;
 }
 
 body {

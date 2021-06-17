@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  color: var(--font-color);
+}
+
+.container__input {
+  border-radius: 2em;
+  background-image: var(--secondary-bg-color);
+  border-style: hidden;
+  color: var(--font-color);
+}
+
+.container__input::placeholder {
+  color: var(--font-color);
+}
