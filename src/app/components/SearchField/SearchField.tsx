@@ -4,20 +4,14 @@ import styles from './SearchField.module.css';
 type InputProps = {
   placeholder: string;
   value: string;
-  onChange: (value: string) => void;
 };
 
-function SearchField({
-  placeholder,
-  value,
-  onChange,
-}: InputProps): JSX.Element {
+function SearchField({ placeholder, value }: InputProps): JSX.Element {
   return (
     <label className={styles.container}>
       <input
         className={styles.container__input}
         placeholder={placeholder}
-        onChange={(event) => onChange(event.target.value)}
         value={value}
       />
     </label>
