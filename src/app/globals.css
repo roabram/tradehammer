@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
   --primary-bg-color: #b4a8a8;
-  --secondary-bg-color: linear-gradient(180deg, #000, #b4a8a8);
+  --secondary-bg-color: linear-gradient(180deg, #010d00, #b4a8a8);
+  --tertiary-bg-color: linear-gradient(180deg, #b4a8a8, #010d00, #b4a8a8);
   --primary-font-family: 'Roboto', sans-serif;
+  --font-color: #fff;
 }
 
 body {
