@@ -1,0 +1,4 @@
+.container {
+  background-image: var(--secondary-bg-color);
+  width: 40em;
+}
