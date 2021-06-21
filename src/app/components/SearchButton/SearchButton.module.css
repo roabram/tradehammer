@@ -1,7 +1,7 @@
 .SearchButton {
   color: white;
   background-image: var(--secondary-bg-color);
-  width: 7em;
+  width: 200px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.3em;
   border-radius: 2em;

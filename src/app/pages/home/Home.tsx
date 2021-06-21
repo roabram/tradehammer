@@ -3,6 +3,7 @@ import CandleStickChart from '../../components/CandleStickChart/CandleStickChart
 import SearchButton from '../../components/SearchButton/SearchButton';
 import SearchFunction from '../../components/SearchFunction/SearchFunction';
 import styles from './Home.module.css';
+import ChartLogo from '../../assets/ChartLogo.svg';
 
 export type Historical = {
   open: number;
@@ -45,15 +46,26 @@ function Home(): JSX.Element {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>tradeHammer</h1>{' '}
-      <div className={styles.searchFunction}>
-        <SearchFunction
-          searchValue={searchValue}
-          setSearchValue={setSearchValue}
-        />
+      <section className={styles.heading}>
+        <h1 className={styles.title}>tradeHammer</h1>
+        <div className={styles.logo}>
+          <img src={ChartLogo} alt="tradehammer.de Logo" />
+        </div>
+      </section>
+      <section className={styles.searchContainer}>
+        <div className={styles.searchFunction}>
+          <SearchFunction
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+          />
+        </div>
+        <div className={styles.enterButton}>
+          <SearchButton onClick={() => loadData()}>Enter</SearchButton>
+        </div>
+      </section>
+      <div className={styles.Chart}>
+        {stockData && <CandleStickChart stockData={stockData} />}
       </div>
-      <SearchButton onClick={() => loadData()}>OK</SearchButton>
-      <div>{stockData && <CandleStickChart stockData={stockData} />}</div>
     </div>
   );
 }

@@ -9,8 +9,9 @@
   border-style: hidden;
   color: var(--font-color);
   padding-left: 1.5em;
-  font-size: 0.8em;
-  width: 14em;
+  font-size: 1.5em;
+  width: 300px;
+  height: 50px;
 }
 
 .container__input::placeholder {
