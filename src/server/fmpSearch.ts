@@ -8,11 +8,8 @@ type ErrorResult = {
   message: string;
 };
 
-async function fetchSingleStockbyTime(
-  stock: string,
-  time: string
-): Promise<[]> {
-  const url = `https://financialmodelingprep.com/api/v3/historical-chart/${time}/${stock}?apikey=${API_KEY}`;
+async function fetchSingleStockbyTime(stock: string): Promise<[]> {
+  const url = `https://financialmodelingprep.com/api/v3/historical-price-full/${stock}?apikey=${API_KEY}`;
 
   const response = await fetch(url);
   if (!response.ok) {
