@@ -23,7 +23,7 @@ function Home(): JSX.Element {
   const [stockData, setStockData] = useState<Array<number[]>>([]);
 
   function loadData() {
-    fetch(`/api/singleStock?stock=${searchValue}&time=4hours`)
+    fetch(`/api/singleStock?stock=${searchValue}`)
       .then((response) => response.json())
       .then((data: StockData) => {
         console.log(data);
