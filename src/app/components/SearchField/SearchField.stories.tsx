@@ -7,5 +7,9 @@ export default {
 };
 
 export const search = (): JSX.Element => (
-  <SearchField value="" onChange={console.log} placeholder="Search.........." />
+  <SearchField
+    searchValue=""
+    setSearchValue={console.log}
+    placeholder="Search.........."
+  />
 );
