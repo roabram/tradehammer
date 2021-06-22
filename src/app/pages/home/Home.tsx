@@ -40,7 +40,7 @@ function Home(): JSX.Element {
           (_stock, index) => index < 29
         );
 
-        setStockData(firstThrityDays);
+        setStockData(firstThirtyDays);
       });
   }
 
