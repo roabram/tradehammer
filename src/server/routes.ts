@@ -1,4 +1,5 @@
 import express from 'express';
+import { readStockData, saveStock } from '../utils/stocks';
 import fetchSingleStockbyTime from './fmpSearch';
 
 const router = express.Router();
@@ -17,4 +18,13 @@ router.get('/singleStock', async (_req, res, next) => {
   }
 });
 
+router.post('/stocks', async (_req, res) => {
+  await saveStock(_req.body);
+  res.send('Stock saved in DB');
+});
+
+router.get('/stocks', async (_req, res) => {
+  const stockdata = await readStockData();
+  res.json(stockdata);
+});
 export default router;
