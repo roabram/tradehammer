@@ -7,13 +7,7 @@ function SearchButton(
     HTMLButtonElement
   >
 ): JSX.Element {
-  return (
-    <button
-      className={styles.SearchButton}
-      {...props}
-      placeholder={'Search...'}
-    />
-  );
+  return <button className={styles.SearchButton} {...props} />;
 }
 
 export default SearchButton;

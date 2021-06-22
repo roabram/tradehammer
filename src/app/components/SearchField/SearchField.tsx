@@ -3,16 +3,24 @@ import styles from './SearchField.module.css';
 
 type InputProps = {
   placeholder: string;
-  value: string;
+  searchValue: string;
+  setSearchValue: (value: string) => void;
 };
 
-function SearchField({ placeholder, value }: InputProps): JSX.Element {
+function SearchField({
+  placeholder,
+  searchValue,
+  setSearchValue,
+}: InputProps): JSX.Element {
   return (
     <label className={styles.container}>
       <input
         className={styles.container__input}
         placeholder={placeholder}
-        value={value}
+        value={searchValue}
+        onChange={(e) => {
+          setSearchValue(e.target.value);
+        }}
       />
     </label>
   );
