@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
 
-const BACKEND_PORT = process.env.PORT || 3333;
+const BACKEND_PORT = process.env.PORT;
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [reactRefresh()],
