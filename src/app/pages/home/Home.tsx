@@ -36,7 +36,7 @@ function Home(): JSX.Element {
           return [timeStamp, stock.open, stock.high, stock.low, stock.close];
         });
 
-        const firstThrityDays = transformed.filter(
+        const firstThirtyDays = transformed.filter(
           (_stock, index) => index < 29
         );
 
