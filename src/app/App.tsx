@@ -9,8 +9,6 @@ function App(): JSX.Element {
         <Route exact path="/Home" component={Home}></Route>
         <Route exact path="/">
           <p>Nein</p>
-          {/* <Button onClick={() => alert('hi')}>Nicht Hallo</Button>
-          <CandleStickChart /> */}
         </Route>
       </Switch>
     </BrowserRouter>
