@@ -14,7 +14,6 @@ function Login(): JSX.Element {
 
   return (
     <div className={styles.container}>
-      <div className={styles.overlay}></div>
       <header className={styles.header}>
         <div className={styles.logo}></div>
         <span className={styles.title}>tradeHammer</span>
