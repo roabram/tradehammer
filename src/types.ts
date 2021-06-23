@@ -1,5 +1,5 @@
 export type StocksType = {
-  symbol: string;
+  symbol?: string;
 };
 
 export type UserType = {

@@ -4,6 +4,7 @@ import SearchButton from '../../components/SearchButton/SearchButton';
 import SearchFunction from '../../components/SearchFunction/SearchFunction';
 import styles from './Home.module.css';
 import ChartLogo from '../../assets/ChartLogo.svg';
+import { postSearchResult } from '../../../utils/api';
 
 export type Historical = {
   open: number;
@@ -39,8 +40,8 @@ function Home(): JSX.Element {
         const firstThirtyDays = transformed.filter(
           (_stock, index) => index < 29
         );
-
         setStockData(firstThirtyDays);
+        postSearchResult(searchValue);
       });
   }
 
