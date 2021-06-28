@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em;
+  background-color: var(--primary-bg-color);
+  height: 100vh;
+}
+.heading {
+  display: flex;
+  background-color: var(--primary-bg-color);
+}
+
+.title {
+  color: var(--font-color);
+  align-content: left;
+}
+
+.logo {
+  margin-right: 1em;
+  align-content: right;
+}
+
+.searchContainer {
+  display: flex;
+  margin-left: -2em;
+  padding-bottom: 1em;
+}
