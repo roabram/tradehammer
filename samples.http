@@ -23,38 +23,4 @@ Accept: application/json
 
 {"symbol": "AAPL"}
 
-### USER 
-
-POST {{baseUrl}}/api/users HTTP/1.1
-Content-Type: application/json
-
-{
-    "username": "Hansi",
-     "email": "HatDie",
-    "password": "Bonane",
-}
-
-### Correct login 
-POST {{baseUrl}}/api/login HTTP/1.1 
-Content-Type: application/json
-
-{
-    "email": "user@mail.de",
-    "password": "tradehammer"
-}
-
-### incCorrect login 
-POST {{baseUrl}}/api/login HTTP/1.1 
-Content-Type: application/json
-
-{
-    "email": "user@mail.de",
-    "password": "tradehammer"
-} 
-
-### Request single User 
-GET {{baseUrl}}/api/users/testi
-
-### Request all User 
-GET {{baseUrl}}/api/users
 
