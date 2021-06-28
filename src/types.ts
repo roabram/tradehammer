@@ -2,7 +2,7 @@ export type StocksType = {
   symbol?: string;
 };
 
-export type UserType = {
-  username: string;
-  password: string;
+export type StockSymbol = {
+  _id: string;
+  symbol: string;
 };
