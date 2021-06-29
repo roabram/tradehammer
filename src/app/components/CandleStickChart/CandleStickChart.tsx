@@ -28,7 +28,6 @@ function CandleStickChart({ stockSymbol }: CandleStickProps): JSX.Element {
         console.log(data);
         const transformed = data.historical.map((stock) => {
           const date = new Date(stock.date);
-          console.log(date);
           const timeStamp = date.getTime();
 
           return [timeStamp, stock.open, stock.high, stock.low, stock.close];

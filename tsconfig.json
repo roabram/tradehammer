@@ -20,10 +20,5 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "./src/app",
-    "src/app/utils",
-    "src/server/database.ts",
-    "src/server/users.ts"
-  ]
+  "include": ["./src/app"]
 }

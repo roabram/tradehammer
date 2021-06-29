@@ -17,7 +17,7 @@ Content-Type: application/json
 GET {{baseUrl}}/api/stocks HTTP/1.1  
 Accept: application/json
 
-###Delete Stock out of DB
+### Delete Stock out of DB
 DELETE {{baseUrl}}/api/stocks/ HTTP/1.1
 Accept: application/json
 
