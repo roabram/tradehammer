@@ -11,7 +11,7 @@ GET {{baseUrl}}/api/singleStock?stock=AAPL
 POST {{baseUrl}}/api/stocks HTTP/1.1
 Content-Type: application/json 
 
-{"symbol": "TSLA"}
+{"symbol": "VW"}
 
 ### GET Stock out of DB
 GET {{baseUrl}}/api/stocks HTTP/1.1  
@@ -21,6 +21,6 @@ Accept: application/json
 DELETE {{baseUrl}}/api/stocks/ HTTP/1.1
 Accept: application/json
 
-{"symbol": "AAPL"}
+{"symbol": "VW"}
 
 

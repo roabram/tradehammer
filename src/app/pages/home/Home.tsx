@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import CandleStickChart from '../../components/CandleStickChart/CandleStickChart';
 import SearchButton from '../../components/SearchButton/SearchButton';
 import SearchFunction from '../../components/SearchFunction/SearchFunction';
 import styles from './Home.module.css';
 import ChartLogo from '../../assets/ChartLogo.svg';
 import { postSearchResult } from '../../../utils/api';
-import { StockSymbol } from '../../../types';
 
 // [Timestamp, Open, High, Low, Close]
 
