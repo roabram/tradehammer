@@ -47,11 +47,21 @@ function CandleStickChart({ stockSymbol }: CandleStickProps): JSX.Element {
 
   return (
     <div className={styles.container}>
-      {console.log(stockData)}
+      <h3 className={styles.symbolHeader}>{stockSymbol}</h3>
       <Chart
         options={{
+          yaxis: {
+            labels: {
+              style: {
+                colors: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+                fontFamily: 'Roboto',
+                fontSize: '0.6em',
+              },
+            },
+          },
           xaxis: {
             labels: {
+              show: false,
               formatter: function (_value: string, timestamp: number) {
                 return `${new Date(timestamp).getMonth() + 1}.${new Date(
                   timestamp
