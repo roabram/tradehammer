@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CandleStickChart from '../../components/CandleStickChart/CandleStickChart';
 import styles from './dashboard.module.css';
-import ChartLogo from '../../assets/ChartLogo.svg';
 import { StockSymbol } from '../../../types';
 
 export type Historical = {
@@ -25,12 +24,6 @@ function Dashboard(): JSX.Element {
 
   return (
     <div className={styles.container}>
-      <section className={styles.heading}>
-        <h1 className={styles.title}>tradeHammer</h1>
-        <div className={styles.logo}>
-          <img src={ChartLogo} alt="tradehammer.de Logo" />
-        </div>
-      </section>
       <section className={styles.chartSection}>
         {savedSymbols?.map((symbol) => (
           <CandleStickChart stockSymbol={symbol.symbol} />
