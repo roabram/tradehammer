@@ -1,0 +1,5 @@
+.App {
+  background-color: var(--primary-bg-color);
+  width: 100%;
+  height: 100vh;
+}
