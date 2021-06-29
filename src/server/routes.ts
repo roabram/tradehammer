@@ -1,5 +1,5 @@
 import express from 'express';
-import { readStockData, saveStock } from '../utils/stocks';
+import { deleteStockData, readStockData, saveStock } from '../utils/stocks';
 import fetchSingleStockbyTime from './fmpSearch';
 
 const router = express.Router();
@@ -27,4 +27,10 @@ router.get('/stocks', async (_req, res) => {
   const stockdata = await readStockData();
   res.json(stockdata);
 });
+
+router.delete('/stocks', async (_req, res) => {
+  await deleteStockData(_req.body);
+  res.send('Stock deleted from db');
+});
+
 export default router;

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
+import dotenv from 'dotenv';
 import reactRefresh from '@vitejs/plugin-react-refresh';
-
+dotenv.config();
 const BACKEND_PORT = process.env.PORT;
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,4 +17,5 @@ export default defineConfig({
   build: {
     outDir: 'dist/app',
   },
+  publicDir: 'src/app/assets',
 });
