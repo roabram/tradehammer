@@ -46,7 +46,7 @@ function CandleStickChart({ stockSymbol }: CandleStickProps): JSX.Element {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.symbolHeader}>{stockSymbol}</h3>
+      <p className={styles.symbolHeader}>{stockSymbol}</p>
       <Chart
         options={{
           yaxis: {
@@ -70,7 +70,7 @@ function CandleStickChart({ stockSymbol }: CandleStickProps): JSX.Element {
           },
           chart: {
             toolbar: {
-              show: true,
+              show: false,
             },
           },
           grid: {

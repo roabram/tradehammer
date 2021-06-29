@@ -31,21 +31,3 @@ export async function deleteSingleStock(symbol: string): Promise<StocksType> {
   const result: StocksType = await response.json();
   return result;
 }
-
-// export async function postLoginUser(
-//   user: Partial<UserType>
-// ): Promise<UserType> {
-//   const response = await fetch('/api/users/login', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(user),
-//   });
-//   if (!response.ok) {
-//     const errorMessage = await response.text();
-//     throw errorMessage;
-//   }
-//   const result: UserType = await response.json();
-//   return result;
-// }
