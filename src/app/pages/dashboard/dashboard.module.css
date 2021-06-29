@@ -1,27 +1,21 @@
 .container {
-  display: grid;
-  grid-auto-flow: row;
-  gap: 1em;
   background-color: var(--primary-bg-color);
-  height: 100vh;
 }
+
 .heading {
   display: flex;
-  background-color: var(--primary-bg-color);
+  justify-content: center;
 }
 
 .title {
   color: var(--font-color);
-  align-content: left;
 }
 
-.logo {
-  margin-right: 1em;
-  align-content: right;
-}
-
-.searchContainer {
+.chartSection {
   display: flex;
-  margin-left: -2em;
-  padding-bottom: 1em;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
