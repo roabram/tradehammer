@@ -1,0 +1,10 @@
+.EnterButton {
+  color: white;
+  background-image: var(--secondary-bg-color);
+  font-family: var(--primary-font-family);
+  font-size: var(--font-size);
+  border-radius: 2em;
+  border-style: hidden;
+  width: 7em;
+  height: 2em;
+}
