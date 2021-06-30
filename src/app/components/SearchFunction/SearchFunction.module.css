@@ -1,3 +1,5 @@
 .container {
   background-image: var(--primary-bg-color);
+  font-size: var(--font-size);
+  font-family: var(--primary-font-family);
 }

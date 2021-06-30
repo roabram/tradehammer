@@ -6,6 +6,7 @@
   --tertiary-bg-color: linear-gradient(180deg, #b4a8a8, #010d00, #b4a8a8);
   --primary-font-family: 'Roboto', sans-serif;
   --font-color: #fff;
+  --font-size: 1em;
 }
 
 body {

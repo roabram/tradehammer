@@ -5,6 +5,7 @@ import SearchFunction from '../../components/SearchFunction/SearchFunction';
 import styles from './Home.module.css';
 // import ChartLogo from '../../assets/ChartLogo.svg';
 import { postSearchResult } from '../../../utils/api';
+import EnterButton from '../../components/EnterButton/EnterButton';
 
 // [Timestamp, Open, High, Low, Close]
 
@@ -12,14 +13,13 @@ function Home(): JSX.Element {
   const [searchValue, setSearchValue] = useState('');
   const [showChart, setShowChart] = useState(false);
 
+  let saveButton;
+  if (showChart) {
+    saveButton = <EnterButton>Save</EnterButton>;
+  }
+
   return (
     <div className={styles.container}>
-      {/* <section className={styles.heading}>
-        <h1 className={styles.title}>tradeHammer</h1>
-        <div className={styles.logo}>
-          <img src={ChartLogo} alt="tradehammer.de Logo" />
-        </div>
-      </section> */}
       <section className={styles.searchContainer}>
         <div className={styles.searchFunction}>
           <SearchFunction
@@ -27,7 +27,7 @@ function Home(): JSX.Element {
             setSearchValue={setSearchValue}
           />
         </div>
-        <div className={styles.enterButton}>
+        <div>
           <SearchButton
             onClick={() => {
               postSearchResult(searchValue);
@@ -41,6 +41,7 @@ function Home(): JSX.Element {
       <div className={styles.Chart}>
         {showChart && <CandleStickChart stockSymbol={searchValue} />}
       </div>
+      <div className={styles.enterButton}>{saveButton}</div>
     </div>
   );
 }

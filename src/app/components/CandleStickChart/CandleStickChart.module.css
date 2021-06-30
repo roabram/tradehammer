@@ -12,3 +12,18 @@
   font-style: normal;
   text-align: center;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .container {
+    animation: ease-in 3s;
+  }
+}
+
+/* @keyframes title-spin {
+  from {
+    left: 100%;
+  }
+  to {
+    right: 50%;
+  }
+} */

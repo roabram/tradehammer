@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SearchField.module.css';
+import styles from './searchField.module.css';
 
 type InputProps = {
   placeholder: string;
