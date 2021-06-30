@@ -8,6 +8,37 @@
   justify-content: center;
 }
 
-.logo {
-  color: var(--font-color);
+/* .animate__heading.animate__hinge {
+  animation: hinge;
+  animation-duration: 1s;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin normal 1s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .title {
+    animation: title-spin normal 1s linear;
+  }
+}
+
+@keyframes title-spin {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
