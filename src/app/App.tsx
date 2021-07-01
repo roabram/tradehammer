@@ -11,7 +11,7 @@ function App(): JSX.Element {
     <BrowserRouter>
       <Heading />
       <Switch>
-        <Route exact path="/home" component={Home}></Route>
+        <Route exact path="" component={Home}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
       </Switch>
       <FooterNav />
