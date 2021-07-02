@@ -12,7 +12,7 @@ function Landingpage(): JSX.Element {
       <div className={styles.logo}>
         <img src={ChartLogo} alt="tradehammer.de Logo" />
       </div>
-      <Link to="/App">
+      <Link to="/home">
         <TradeInIcon />
       </Link>
     </div>

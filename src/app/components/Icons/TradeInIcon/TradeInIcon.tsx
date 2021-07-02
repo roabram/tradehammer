@@ -21,7 +21,7 @@ function TradeInIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
         >
           <feOffset dy="3" />
           <feGaussianBlur stdDeviation="3" result="blur" />
-          <feFlood flood-color="#010d00" flood-opacity="0.502" />
+          <feFlood floodColor="#010d00" floodOpacity="0.502" />
           <feComposite operator="in" in2="blur" />
           <feComposite in="SourceGraphic" />
         </filter>
@@ -49,8 +49,8 @@ function TradeInIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
           id="tradeIn"
           transform="translate(51 51)"
           fill="#fff"
-          font-size="25"
-          font-family="Roboto-Regular, Roboto"
+          fontSize="25"
+          fontFamily="Roboto-Regular, Roboto"
         >
           <tspan x="0" y="0">
             tradeIn
