@@ -4,22 +4,18 @@ dotenv.config();
 
 const { API_KEY } = process.env;
 
-type ErrorResult = {
-  message: string;
-};
-
 async function fetchSingleStockbyTime(stock: string): Promise<[]> {
   const url = `https://financialmodelingprep.com/api/v3/historical-price-full/${stock}?apikey=${API_KEY}`;
 
   const response = await fetch(url);
-  if (!response.ok) {
-    const errorResult: ErrorResult = await response.json();
-    console.log(errorResult);
+
+  const result = await response.json();
+  if (Object.keys(result).length === 0) {
     throw {
-      message: errorResult.message,
+      message: 'No Symbol found',
     };
   }
-  const result = await response.json();
+
   return result;
 }
 export default fetchSingleStockbyTime;

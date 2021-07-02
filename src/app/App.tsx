@@ -1,21 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Dashboard from './pages/dashboard/Dashboard';
-import Home from './pages/home/Home';
-import './App.modules.css';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Home from './pages/Home/Home';
 import Heading from './components/Heading/Heading';
 import FooterNav from './components/FooterNav/FooterNav';
+import Landingpage from './pages/Landingpage/Landingpage';
 
 function App(): JSX.Element {
+  const location = useLocation().pathname;
   return (
-    <BrowserRouter>
-      <Heading />
+    <>
+      {location !== '/' && <Heading />}
       <Switch>
-        <Route exact path="/home" component={Home}></Route>
-        <Route exact path="/dashboard" component={Dashboard}></Route>
+        <Route exact path="/" component={Landingpage} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
-      <FooterNav />
-    </BrowserRouter>
+      {location !== '/' && <FooterNav />}
+    </>
   );
 }
 

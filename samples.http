@@ -2,7 +2,7 @@
 @baseUrl = http://localhost:{{port}}
 @MONGO_URL
 ### Single Stock 15 min 
-GET {{baseUrl}}/api/singleStock?stock=AAPL
+GET {{baseUrl}}/api/singleStock?stock=XLS
 
 ### Single Stock 15 min 
 GET {{baseUrl}}/api/singleStock?stock=AAPL

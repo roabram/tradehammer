@@ -4,9 +4,9 @@ import fetchSingleStockbyTime from './fmpSearch';
 
 const router = express.Router();
 
-router.get('/singleStock', async (_req, res, next) => {
+router.get('/singleStock', async (req, res, next) => {
   try {
-    const { query } = _req;
+    const { query } = req;
     if (typeof query.stock !== 'string') {
       res.status(404).send('404 not Found');
       return;
@@ -18,8 +18,8 @@ router.get('/singleStock', async (_req, res, next) => {
   }
 });
 
-router.post('/stocks', async (_req, res) => {
-  await saveStock(_req.body);
+router.post('/stocks', async (req, res) => {
+  await saveStock(req.body);
   res.send('Stock saved in DB');
 });
 
@@ -28,8 +28,8 @@ router.get('/stocks', async (_req, res) => {
   res.json(stockdata);
 });
 
-router.delete('/stocks', async (_req, res) => {
-  await deleteStockData(_req.body);
+router.delete('/stocks', async (req, res) => {
+  await deleteStockData(req.body);
   res.send('Stock deleted from db');
 });
 
