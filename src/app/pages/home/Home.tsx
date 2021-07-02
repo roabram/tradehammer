@@ -3,7 +3,6 @@ import CandleStickChart from '../../components/CandleStickChart/CandleStickChart
 import SearchButton from '../../components/SearchButton/SearchButton';
 import SearchFunction from '../../components/SearchFunction/SearchFunction';
 import styles from './Home.module.css';
-// import ChartLogo from '../../assets/ChartLogo.svg';
 import { postSearchResult } from '../../../utils/api';
 import EnterButton from '../../components/EnterButton/EnterButton';
 
@@ -12,11 +11,8 @@ import EnterButton from '../../components/EnterButton/EnterButton';
 function Home(): JSX.Element {
   const [searchValue, setSearchValue] = useState('');
   const [showChart, setShowChart] = useState(false);
-
-  let saveButton;
-  if (showChart) {
-    saveButton = <EnterButton>Save</EnterButton>;
-  }
+  const [showSaveButton, setShowSaveButton] = useState(false);
+  const [error, setError] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -30,8 +26,8 @@ function Home(): JSX.Element {
         <div>
           <SearchButton
             onClick={() => {
-              postSearchResult(searchValue);
-              setShowChart(true);
+              setShowChart(!showChart);
+              setShowSaveButton(true);
             }}
           >
             Enter
@@ -39,9 +35,22 @@ function Home(): JSX.Element {
         </div>
       </section>
       <div className={styles.Chart}>
-        {showChart && <CandleStickChart stockSymbol={searchValue} />}
+        {showChart && (
+          <CandleStickChart
+            stockSymbol={searchValue}
+            showChart={showChart}
+            error={error}
+            setError={setError}
+          />
+        )}
       </div>
-      <div className={styles.enterButton}>{saveButton}</div>
+      <div className={styles.enterButton}>
+        {showSaveButton && !error && (
+          <EnterButton onClick={() => postSearchResult(searchValue)}>
+            Save
+          </EnterButton>
+        )}
+      </div>
     </div>
   );
 }

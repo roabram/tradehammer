@@ -15,6 +15,7 @@ export type Historical = {
 
 function Dashboard(): JSX.Element {
   const [savedSymbols, setSavedSymbols] = useState<StockSymbol[]>([]);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch('/api/stocks')
@@ -26,7 +27,13 @@ function Dashboard(): JSX.Element {
     <div className={styles.container}>
       <section className={styles.chartSection}>
         {savedSymbols?.map((symbol) => (
-          <CandleStickChart stockSymbol={symbol.symbol} />
+          <CandleStickChart
+            key={symbol._id}
+            stockSymbol={symbol.symbol}
+            showChart={true}
+            error={error}
+            setError={setError}
+          />
         ))}
       </section>
     </div>

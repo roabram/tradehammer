@@ -4,6 +4,9 @@ import Chart from 'react-apexcharts';
 
 type CandleStickProps = {
   stockSymbol: string;
+  showChart: boolean;
+  error: boolean;
+  setError: (value: boolean) => void;
 };
 
 export type Historical = {
@@ -18,14 +21,19 @@ type StockData = {
   historical: Historical[];
 };
 
-function CandleStickChart({ stockSymbol }: CandleStickProps): JSX.Element {
+function CandleStickChart({
+  stockSymbol,
+  showChart,
+  error,
+  setError,
+}: CandleStickProps): JSX.Element {
   const [stockData, setStockData] = useState<Array<number[]>>([]);
 
   function loadData(symbol: string) {
+    setError(false);
     fetch(`/api/singleStock?stock=${symbol}`)
       .then((response) => response.json())
       .then((data: StockData) => {
-        console.log(data);
         const transformed = data.historical.map((stock) => {
           const date = new Date(stock.date);
           const timeStamp = date.getTime();
@@ -37,14 +45,20 @@ function CandleStickChart({ stockSymbol }: CandleStickProps): JSX.Element {
           (_stock, index) => index < 29
         );
         setStockData(firstThirtyDays);
+      })
+      .catch((error) => {
+        setError(true);
+        console.error(error);
       });
   }
 
   useEffect(() => {
     loadData(stockSymbol);
-  }, [stockSymbol]);
+  }, [showChart]);
 
-  return (
+  return error ? (
+    <p> Stock not found </p>
+  ) : (
     <div className={styles.container}>
       <p className={styles.symbolHeader}>{stockSymbol}</p>
       <Chart
