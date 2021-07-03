@@ -18,6 +18,7 @@
 
 .container__input:focus {
   border: 1px solid white;
+
 }
 
 .container__input::placeholder {
