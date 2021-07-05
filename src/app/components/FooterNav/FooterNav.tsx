@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import DashboardIcon from '../Icons/DashboardIcon/DashboardIcon';
 import HomeIcon from '../Icons/HomeIcon/HomeIcon';
-import styles from './footerNav.module.css';
+import styles from './FooterNav.module.css';
 
 function FooterNav(): JSX.Element {
   return (

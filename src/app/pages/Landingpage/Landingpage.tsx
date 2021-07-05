@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import TradeInIcon from '../../components/Icons/TradeInIcon/TradeInIcon';
-import styles from './landingpage.module.css';
+import styles from './Landingpage.module.css';
 import ChartLogo from '../../assets/ChartLogo.svg';
 
 // [Timestamp, Open, High, Low, Close]

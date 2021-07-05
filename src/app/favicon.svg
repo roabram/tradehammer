@@ -1,15 +1,19 @@
-<svg width="410" height="404" viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z" fill="url(#paint0_linear)"/>
-<path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z" fill="url(#paint1_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
-<stop stop-color="#41D1FF"/>
-<stop offset="1" stop-color="#BD34FE"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFEA83"/>
-<stop offset="0.0833333" stop-color="#FFDD35"/>
-<stop offset="1" stop-color="#FFA800"/>
-</linearGradient>
-</defs>
+<svg id="Hammer" xmlns="http://www.w3.org/2000/svg" width="190" height="199" viewBox="0 0 190 199">
+  <rect id="Rechteck_3" data-name="Rechteck 3" width="4" height="34" transform="translate(0 37)" fill="#000"/>
+  <rect id="Rechteck_4" data-name="Rechteck 4" width="4" height="46" transform="translate(12 54)" fill="#000"/>
+  <rect id="Rechteck_5" data-name="Rechteck 5" width="4" height="68" transform="translate(27 75)" fill="#000"/>
+  <rect id="Rechteck_6" data-name="Rechteck 6" width="4" height="81" transform="translate(41 92)" fill="#000"/>
+  <rect id="Rechteck_7" data-name="Rechteck 7" width="4" height="88" transform="translate(54 111)" fill="#000"/>
+  <rect id="Rechteck_8" data-name="Rechteck 8" width="4" height="78" transform="translate(67 92)" fill="#000"/>
+  <rect id="Rechteck_9" data-name="Rechteck 9" width="5" height="92" transform="translate(80 54)" fill="#000"/>
+  <rect id="Rechteck_10" data-name="Rechteck 10" width="4" height="67" transform="translate(93 37)" fill="#000"/>
+  <rect id="Rechteck_11" data-name="Rechteck 11" width="10" height="30" transform="translate(51 116)" fill="#000"/>
+  <rect id="Rechteck_12" data-name="Rechteck 12" width="4" height="46" transform="translate(105 17)" fill="#000"/>
+  <rect id="Rechteck_13" data-name="Rechteck 13" width="4" height="68" transform="translate(120 38)" fill="#000"/>
+  <rect id="Rechteck_14" data-name="Rechteck 14" width="4" height="81" transform="translate(134 55)" fill="#000"/>
+  <rect id="Rechteck_15" data-name="Rechteck 15" width="4" height="88" transform="translate(147 74)" fill="#000"/>
+  <rect id="Rechteck_16" data-name="Rechteck 16" width="4" height="78" transform="translate(160 55)" fill="#000"/>
+  <rect id="Rechteck_17" data-name="Rechteck 17" width="5" height="92" transform="translate(173 17)" fill="#000"/>
+  <rect id="Rechteck_18" data-name="Rechteck 18" width="4" height="67" transform="translate(186)" fill="#000"/>
+  <rect id="Rechteck_19" data-name="Rechteck 19" width="10" height="35" transform="translate(144 81)" fill="#000"/>
 </svg>

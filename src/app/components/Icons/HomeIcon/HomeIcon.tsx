@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './homeIcon.module.css';
+import styles from './HomeIcon.module.css';
 
 function HomeIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (

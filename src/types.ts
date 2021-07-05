@@ -3,6 +3,6 @@ export type StocksType = {
 };
 
 export type StockSymbol = {
-  _id: string;
+  _id?: string;
   symbol: string;
 };

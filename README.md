@@ -1,99 +1,50 @@
-# Name of the project
+# tradeHammer README
 
-> Additional information or tag line
+First, install dependencies:
 
-A brief description of your project, what it is used for.
-
-## Installing / Getting started
-
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
-
-```shell
-commands here
+```
+npm install
 ```
 
-Here you should say what actually happens when you execute the code above.
+In the project directory, you can then run:
 
-## Developing
-
-### Built With
-
-List main libraries, frameworks used including versions (React, Angular etc...)
-
-### Prerequisites
-
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
-
-### Setting up Dev
-
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
-
-```shell
-git clone https://github.com/your/your-project.git
-cd your-project/
-packagemanager install
+```
+npm run build
 ```
 
-And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
+Builds the app for production to the dist folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
 
-### Building
-
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here. for example:
-
-```shell
-./configure
-make
-make install
+```
+npm start
 ```
 
-Here again you should state what actually happens when the code above gets
-executed.
+Runs the server in production mode and serve production bundle from npm run build
 
-### Deploying / Publishing
-
-give instructions on how to build and release a new version
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-```shell
-packagemanager deploy your-project -s server.com -u username -p password
+```
+npm run server:dev
 ```
 
-And again you'd need to tell what the previous code actually does.
+Runs the server in development mode.
 
-## Versioning
-
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when using the project.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
-
-```shell
-Give an example
+```
+npm run client:dev
 ```
 
-## Style guide
+Runs the app in development mode.
 
-Explain your code style and show how to check it.
+Open http://localhost:3000 (default PORT) to view it in the browser. The page will automatically reload if you make changes to the code. You will see the build errors and lint warnings in the console.
 
-## Api Reference
+## .env
 
-If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
+You have to create a .env file inside the main folder.
 
-## Database
+The .env looks like:
 
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc...
+```
+PORT=
+API_KEY=
+MONGO_URL=
+```
 
-## Licensing
-
-State what the license is and how to find the text version of the license.
+PORT is for your backend.
+API_KEY is from https://financialmodelingprep.com/
