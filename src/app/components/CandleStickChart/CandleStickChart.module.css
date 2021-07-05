@@ -3,6 +3,8 @@
   border-radius: 2em;
   margin: 1.3em;
   max-width: 35em;
+  margin-bottom: 3em;
+  animation: lightSpeedInLeft 1s ease-in;
 }
 
 .symbolHeader {
@@ -13,17 +15,73 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .container {
-    animation: ease-in 3s;
+.stockErrorMessage {
+  color: var(--font-color);
+  margin: 3em;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.minusIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
-/* @keyframes title-spin {
+.rollIn {
+  animation-name: rollIn;
+}
+
+@keyframes fadeInLeft {
   from {
-    left: 100%;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
   }
+
   to {
-    right: 50%;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
-} */
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes lightSpeedInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(5deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedInLeft {
+  animation-name: lightSpeedInLeft;
+  animation-timing-function: ease-out;
+}
