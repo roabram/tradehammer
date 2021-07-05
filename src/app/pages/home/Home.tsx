@@ -37,10 +37,11 @@ function Home(): JSX.Element {
       <div className={styles.Chart}>
         {showChart && (
           <CandleStickChart
-            stockSymbol={searchValue}
+            stockSymbol={{ symbol: searchValue }}
             showChart={showChart}
             error={error}
             setError={setError}
+            withDelete={false}
           />
         )}
       </div>
