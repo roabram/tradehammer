@@ -1,14 +1,18 @@
-import { StocksType } from '../types';
+import { StocksType, StockSymbol } from '../types';
 import { getStocksCollection } from './database';
 
 export const saveStock = async (symbol: StocksType): Promise<void> => {
   await getStocksCollection().insertOne({ ...symbol });
 };
 
-export const readStockData = async (): Promise<StocksType[]> => {
+export const readStockData = async (): Promise<StockSymbol[]> => {
   return await getStocksCollection().find().toArray();
 };
 
 export const deleteStockData = async (symbol: StocksType): Promise<void> => {
-  await getStocksCollection().deleteOne(symbol);
+  console.log('backend', symbol);
+  const response = await getStocksCollection().deleteOne({
+    symbol: symbol.symbol,
+  });
+  console.log(response);
 };
