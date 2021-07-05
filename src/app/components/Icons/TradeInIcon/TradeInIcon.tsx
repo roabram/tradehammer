@@ -46,14 +46,14 @@ function TradeInIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
           </g>
         </g>
         <text
-          id="tradeIn"
+          id="trade In"
           transform="translate(51 51)"
           fill="#fff"
           fontSize="25"
           fontFamily="Roboto-Regular, Roboto"
         >
           <tspan x="0" y="0">
-            tradeIn
+            trade In
           </tspan>
         </text>
       </g>
