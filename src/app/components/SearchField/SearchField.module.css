@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  color: var(--font-color);
+}
+
+.container__input {
+  border-radius: 2em;
+  background-image: var(--tertiary-bg-color);
+  color: var(--font-color);
+  padding-left: 1.5em;
+  font-size: var(--font-size);
+  font-family: var(--primary-font-family);
+  width: 20em;
+  height: 2.5em;
+  outline: none;
+  border: none;
+}
+
+.container__input:focus {
+  border: 1px solid white;
+}
+
+.container__input::placeholder {
+  color: var(--font-color);
+}
