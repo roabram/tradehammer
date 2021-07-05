@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './dashboardIcon.module.css';
+import styles from './DashboardIcon.module.css';
 
 function DashboardIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (

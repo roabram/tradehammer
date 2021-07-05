@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './heading.module.css';
+import styles from './Heading.module.css';
 import ChartLogo from '../../assets/ChartLogo.svg';
 
 function Heading(): JSX.Element {
