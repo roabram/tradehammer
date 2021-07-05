@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './enterButton.module.css';
+import styles from './EnterButton.module.css';
 
 function EnterButton(
   props: React.DetailedHTMLProps<
